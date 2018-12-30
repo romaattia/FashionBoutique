@@ -37,6 +37,7 @@ public class BusinessConstants {
     public static final String GROUPTYPE = "groupType";
     public static final String USERNAME = "UserName";
     public static final String PASSWORD = "Password" ;
+    public static final String ABOUT ="about" ;
 
     @IntDef({FRAME, SCROLLABLE})
     @Retention(RetentionPolicy.SOURCE)

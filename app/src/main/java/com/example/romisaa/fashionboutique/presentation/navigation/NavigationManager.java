@@ -3,6 +3,9 @@ package com.example.romisaa.fashionboutique.presentation.navigation;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.example.romisaa.fashionboutique.data.model.AboutModel;
+import com.example.romisaa.fashionboutique.presentation.view.about.edit_about.AboutFragment;
+import com.example.romisaa.fashionboutique.presentation.view.about.view_about.EditAboutFragment;
 import com.example.romisaa.fashionboutique.presentation.view.feedback.FeedbackFragment;
 import com.example.romisaa.fashionboutique.presentation.view.home.HomeActivity;
 import com.example.romisaa.fashionboutique.presentation.view.home.add_product.AddProductFragment;
@@ -51,6 +54,15 @@ public class NavigationManager extends BaseNavigationManager {
 
     @Override
     public void navigateToAboutFragment() {
-        addFragment(getCurrentActivity().getContainerId(), null, true, null);
+        addFragment(getCurrentActivity().getContainerId(), new AboutFragment(), true, null);
+    }
+
+    @Override
+    public void navigateToeditAboutSection(AboutModel aboutModel) {
+        EditAboutFragment editAboutFragment = new EditAboutFragment();
+        Bundle args = new Bundle();
+        args.putParcelable(BusinessConstants.ABOUT, aboutModel);
+        editAboutFragment.setArguments(args);
+        addFragment(getCurrentActivity().getContainerId(), editAboutFragment, true, null);
     }
 }

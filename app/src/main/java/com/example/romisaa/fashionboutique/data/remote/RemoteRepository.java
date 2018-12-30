@@ -1,5 +1,6 @@
 package com.example.romisaa.fashionboutique.data.remote;
 
+import com.example.romisaa.fashionboutique.data.model.AboutModel;
 import com.example.romisaa.fashionboutique.data.model.FeedbackModel;
 import com.example.romisaa.fashionboutique.data.model.ProductItemModel;
 
@@ -19,4 +20,8 @@ public interface RemoteRepository {
     Observable<Boolean> signup(Map<String,Object> parameters);
 
     Observable<List<FeedbackModel>> getFeedbacks();
+
+    Observable<AboutModel> getAboutSection();
+
+    Observable<Boolean> editAboutSection(Map<String,Object> parameters);
 }

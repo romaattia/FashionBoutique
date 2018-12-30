@@ -1,5 +1,6 @@
 package com.example.romisaa.fashionboutique.data.local;
 
+import com.example.romisaa.fashionboutique.data.model.AboutModel;
 import com.example.romisaa.fashionboutique.data.model.FeedbackModel;
 import com.example.romisaa.fashionboutique.data.model.ProductItemModel;
 
@@ -43,6 +44,16 @@ public class LocalRepositoryImpl implements LocalRepository {
 
     @Override
     public Observable<List<FeedbackModel>> getFeedbacks() {
+        return null;
+    }
+
+    @Override
+    public Observable<AboutModel> getAboutSection() {
+        return null;
+    }
+
+    @Override
+    public Observable<Boolean> editAboutSection(Map<String, Object> parameters) {
         return null;
     }
 }

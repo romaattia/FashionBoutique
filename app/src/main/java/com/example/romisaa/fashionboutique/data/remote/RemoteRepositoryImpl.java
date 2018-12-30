@@ -2,6 +2,7 @@ package com.example.romisaa.fashionboutique.data.remote;
 
 import android.support.annotation.NonNull;
 
+import com.example.romisaa.fashionboutique.data.model.AboutModel;
 import com.example.romisaa.fashionboutique.data.model.FeedbackModel;
 import com.example.romisaa.fashionboutique.data.model.ProductItemModel;
 import com.example.romisaa.fashionboutique.data.model.UserModel;
@@ -101,6 +102,7 @@ public class RemoteRepositoryImpl implements RemoteRepository {
                             emitter.onNext(userLogged);
                         }
                     }
+
                     @Override
                     public void onCancelled(@NonNull DatabaseError databaseError) {
 
@@ -117,7 +119,7 @@ public class RemoteRepositoryImpl implements RemoteRepository {
         final String pw = (String) parameters.get(BusinessConstants.PASSWORD);
         final DatabaseReference ref = database.getReference("Users");
         String key = ref.push().getKey();
-        UserModel model = new UserModel(username,pw);
+        UserModel model = new UserModel(username, pw);
         ref.child(key).setValue(model);
         Observable<Boolean> observable = Observable.create(new ObservableOnSubscribe<Boolean>() {
             @Override
@@ -151,6 +153,43 @@ public class RemoteRepositoryImpl implements RemoteRepository {
 
                     }
                 });
+            }
+        });
+        return observable;
+    }
+
+    @Override
+    public Observable<AboutModel> getAboutSection() {
+        final DatabaseReference ref = database.getReference("About/AboutModel");
+        Observable<AboutModel> observable = Observable.create(new ObservableOnSubscribe<AboutModel>() {
+            @Override
+            public void subscribe(final ObservableEmitter<AboutModel> emitter) throws Exception {
+                ref.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        AboutModel model = dataSnapshot.getValue(AboutModel.class);
+                        emitter.onNext(model);
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+                });
+            }
+        });
+        return observable;
+    }
+
+    @Override
+    public Observable<Boolean> editAboutSection(Map<String, Object> parameters) {
+        AboutModel model = (AboutModel) parameters.get(BusinessConstants.ABOUT);
+        final DatabaseReference ref = database.getReference("About/AboutModel");
+        ref.setValue(model);
+        Observable<Boolean> observable = Observable.create(new ObservableOnSubscribe<Boolean>() {
+            @Override
+            public void subscribe(ObservableEmitter<Boolean> emitter) throws Exception {
+                emitter.onNext(true);
             }
         });
         return observable;

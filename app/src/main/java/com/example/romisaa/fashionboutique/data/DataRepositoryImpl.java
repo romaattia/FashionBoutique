@@ -2,6 +2,7 @@ package com.example.romisaa.fashionboutique.data;
 
 
 import com.example.romisaa.fashionboutique.data.local.LocalRepository;
+import com.example.romisaa.fashionboutique.data.model.AboutModel;
 import com.example.romisaa.fashionboutique.data.model.FeedbackModel;
 import com.example.romisaa.fashionboutique.data.model.ProductItemModel;
 import com.example.romisaa.fashionboutique.data.remote.RemoteRepository;
@@ -66,6 +67,24 @@ public class DataRepositoryImpl implements DataRepository {
             return remoteRepository.getFeedbacks();
         } else {
             return localRepository.getFeedbacks();
+        }
+    }
+
+    @Override
+    public Observable<AboutModel> getAboutSection() {
+        if (NetworkUtils.isNetworkAvailable()) {
+            return remoteRepository.getAboutSection();
+        } else {
+            return localRepository.getAboutSection();
+        }
+    }
+
+    @Override
+    public Observable<Boolean> editAboutSection(Map<String, Object> parameters) {
+        if (NetworkUtils.isNetworkAvailable()) {
+            return remoteRepository.editAboutSection(parameters);
+        } else {
+            return localRepository.editAboutSection(parameters);
         }
     }
 }

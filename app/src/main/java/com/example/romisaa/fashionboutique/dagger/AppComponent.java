@@ -1,5 +1,7 @@
 package com.example.romisaa.fashionboutique.dagger;
 
+import com.example.romisaa.fashionboutique.presentation.view.about.edit_about.AboutViewModel;
+import com.example.romisaa.fashionboutique.presentation.view.about.view_about.EditAboutViewModel;
 import com.example.romisaa.fashionboutique.presentation.view.feedback.FeedbackViewModel;
 import com.example.romisaa.fashionboutique.presentation.view.home.add_product.AddProductViewModel;
 import com.example.romisaa.fashionboutique.presentation.view.home.view_product.ViewProductsViewModel;
@@ -23,4 +25,8 @@ public interface AppComponent {
     void inject(SignupViewModel viewModel);
 
     void inject(FeedbackViewModel viewModel);
+
+    void inject(AboutViewModel viewModel);
+
+    void inject(EditAboutViewModel viewModel);
 }

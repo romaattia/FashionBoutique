@@ -25,6 +25,7 @@ public class LoginViewModel extends BaseViewModel {
         super(application);
     }
 
+
     public void login(String userName, String pw) {
         Map<String, Object> parameters = new HashMap<>();
         parameters.put(BusinessConstants.USERNAME, userName);

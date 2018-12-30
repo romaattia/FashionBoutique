@@ -5,6 +5,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 
+import com.example.romisaa.fashionboutique.data.model.AboutModel;
 import com.example.romisaa.fashionboutique.presentation.base.BaseActivity;
 import com.example.romisaa.fashionboutique.utils.StringUtils;
 
@@ -67,4 +68,6 @@ public abstract class BaseNavigationManager {
     public abstract void navigateToFeedbackFragment();
 
     public abstract void navigateToAboutFragment();
+
+    public abstract void navigateToeditAboutSection(AboutModel aboutModel);
 }
