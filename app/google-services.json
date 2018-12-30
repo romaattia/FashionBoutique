@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "938902566916",
+    "firebase_url": "https://fashionapplication.firebaseio.com",
+    "project_id": "fashionapplication",
+    "storage_bucket": "fashionapplication.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:938902566916:android:36ce46b003338939",
+        "android_client_info": {
+          "package_name": "com.example.romisaa.fashionboutique"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "938902566916-0d1ugs4r07phicimf6bv3to1jkrgd9ql.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.romisaa.fashionboutique",
+            "certificate_hash": "28815dc4594bc6d25439a63164edaf46a8e417b1"
+          }
+        },
+        {
+          "client_id": "938902566916-tkmtinaj0k22id05g7r3oj15kfn33464.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2ES9fuo1bd2PXJlJmTljvM1Rn5_jYWBY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "938902566916-tkmtinaj0k22id05g7r3oj15kfn33464.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:938902566916:android:b7a1f0772ae6c1a5",
+        "android_client_info": {
+          "package_name": "com.example.romisaa.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "938902566916-km65cd02brgebiosj2c556utnjnabhm3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.romisaa.myapplication",
+            "certificate_hash": "28815dc4594bc6d25439a63164edaf46a8e417b1"
+          }
+        },
+        {
+          "client_id": "938902566916-tkmtinaj0k22id05g7r3oj15kfn33464.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2ES9fuo1bd2PXJlJmTljvM1Rn5_jYWBY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "938902566916-tkmtinaj0k22id05g7r3oj15kfn33464.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
