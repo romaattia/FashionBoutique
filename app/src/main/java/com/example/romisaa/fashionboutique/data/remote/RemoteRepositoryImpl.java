@@ -97,6 +97,7 @@ public class RemoteRepositoryImpl implements RemoteRepository {
                                 UserModel model = postSnapshot.getValue(UserModel.class);
                                 if (model.getUsername().equalsIgnoreCase(username) && model.getPassword().equalsIgnoreCase(pw)) {
                                     userLogged = true;
+                                    break;
                                 }
                             }
                             emitter.onNext(userLogged);

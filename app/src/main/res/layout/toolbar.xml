@@ -6,4 +6,5 @@
     android:layout_height="?attr/actionBarSize"
     android:background="@color/colorPrimary"
     app:titleTextColor="@android:color/white"
+    android:textSize="@dimen/sp14"
     android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />

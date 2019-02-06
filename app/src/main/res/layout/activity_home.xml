@@ -37,16 +37,38 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="start"
-            android:fitsSystemWindows="true"
             app:headerLayout="@layout/header">
 
-            <ExpandableListView
-                android:id="@+id/expandable_lv"
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dp210h"
-                android:childDivider="#00000000"
-                android:dividerHeight="@null"></ExpandableListView>
+                android:layout_height="match_parent">
+                <ExpandableListView
+                    android:id="@+id/expandable_lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp160h"
+                    android:childDivider="#00000000"
+                    android:layout_alignParentTop="true"
+                    android:layout_above="@+id/logout_bt"
+                    android:dividerHeight="@null"></ExpandableListView>
+
+                <Button
+                    android:id="@+id/logout_bt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:paddingBottom="@dimen/dp7h"
+                    android:paddingTop="@dimen/dp7h"
+                    android:layout_marginLeft="@dimen/dp50w"
+                    android:layout_marginRight="@dimen/dp50w"
+                    android:layout_marginTop="@dimen/dp10h"
+                    android:layout_marginBottom="@dimen/dp15h"
+                    android:text="Logout"
+                    android:background="@drawable/rectangle"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/sp14"/>
+            </RelativeLayout>
+
 
         </android.support.design.widget.NavigationView>
 

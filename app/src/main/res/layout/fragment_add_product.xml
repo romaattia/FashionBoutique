@@ -26,30 +26,32 @@
     <android.support.v7.widget.AppCompatEditText
         android:id="@+id/desc_tv"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/dp80h"
+        android:layout_height="wrap_content"
         android:layout_above="@+id/price_tv"
         android:layout_marginTop="@dimen/dp10h"
         android:backgroundTint="@color/colorPrimary"
-        android:hint="Enter Product Description" />
+        android:hint="Enter Product Description"
+        android:textSize="@dimen/sp14"/>
 
     <android.support.v7.widget.AppCompatEditText
         android:id="@+id/price_tv"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/dp50h"
+        android:layout_height="wrap_content"
         android:layout_above="@id/insert_bt"
         android:layout_marginTop="@dimen/dp10h"
         android:backgroundTint="@color/colorPrimary"
-        android:hint="Enter Product Price" />
+        android:hint="Enter Product Price"
+        android:textSize="@dimen/sp14"/>
 
     <Button
         android:id="@+id/insert_bt"
         android:layout_width="@dimen/dp150w"
-        android:layout_height="@dimen/dp50h"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/dp10h"
         android:background="@drawable/rectangle"
         android:text="Insert"
-        android:textSize="@dimen/sp18"
+        android:textSize="@dimen/sp14"
         android:textColor="@android:color/white" />
 </RelativeLayout>

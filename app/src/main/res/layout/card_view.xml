@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/dp300h"
+    android:layout_height="@dimen/dp150h"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_margin="@dimen/dp5h"
     app:cardCornerRadius="@dimen/dp10h"
@@ -17,7 +17,6 @@
             android:layout_height="match_parent"
             android:layout_above="@+id/desc_tv"
             android:layout_marginBottom="@dimen/dp10h"
-            android:scaleType="fitXY"
             android:src="@drawable/girl" />
 
         <TextView
@@ -29,7 +28,7 @@
             android:gravity="center"
             android:maxLines="4"
             android:text="Long Bantlon With beatfull cropped logged"
-            android:textSize="@dimen/sp24" />
+            android:textSize="@dimen/sp14" />
 
         <TextView
             android:id="@+id/price_tv"
@@ -39,7 +38,7 @@
             android:layout_marginBottom="@dimen/dp10h"
             android:gravity="center"
             android:text="35 LE"
-            android:textSize="@dimen/sp24" />
+            android:textSize="@dimen/sp14" />
     </RelativeLayout>
 
 </android.support.v7.widget.CardView>

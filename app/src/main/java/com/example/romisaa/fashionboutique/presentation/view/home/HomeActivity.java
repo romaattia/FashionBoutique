@@ -240,4 +240,10 @@ public class HomeActivity extends BaseActivity<HomeViewModel> {
         super.subscribeLiveData();
     }
 
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
+    }
 }

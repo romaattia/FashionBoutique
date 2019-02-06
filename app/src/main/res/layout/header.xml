@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/dp200h"
+    android:layout_height="@dimen/dp150h"
     android:background="@color/colorPrimary"
     android:orientation="vertical">
 
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/iv"
-        android:layout_width="@dimen/dp70w"
-        android:layout_height="@dimen/dp70h"
+        android:layout_width="@dimen/dp50w"
+        android:layout_height="@dimen/dp50h"
         android:layout_above="@+id/name_tv"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="@dimen/dp20h"
+        android:layout_marginBottom="@dimen/dp10h"
+        android:layout_marginTop="@dimen/dp20h"
         android:src="@drawable/person_image" />
 
     <TextView
@@ -24,7 +25,7 @@
         android:layout_marginBottom="@dimen/dp30h"
         android:text="Roma Hussein"
         android:textColor="@android:color/white"
-        android:textSize="@dimen/sp24" />
+        android:textSize="@dimen/sp14" />
 
 
 </RelativeLayout>

@@ -16,36 +16,40 @@
         <android.support.v7.widget.AppCompatEditText
             android:id="@+id/username_et"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/dp50h"
+            android:layout_height="wrap_content"
             android:backgroundTint="@color/colorPrimary"
-            android:hint="User Name" />
+            android:hint="User Name"
+            android:textSize="@dimen/sp14"/>
 
         <android.support.v7.widget.AppCompatEditText
             android:id="@+id/pw_et"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/dp50h"
+            android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/dp20h"
             android:backgroundTint="@color/colorPrimary"
-            android:hint="Password" />
+            android:hint="Password"
+            android:textSize="@dimen/sp14"/>
 
         <android.support.v7.widget.AppCompatEditText
             android:id="@+id/confirm_pw_et"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/dp50h"
+            android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/dp20h"
             android:backgroundTint="@color/colorPrimary"
-            android:hint="Confirm Password" />
+            android:hint="Confirm Password"
+            android:textSize="@dimen/sp14"/>
 
 
         <Button
             android:id="@+id/signup_bt"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/dp20h"
             android:background="@drawable/rectangle"
             android:text="SIGNUP"
             android:textColor="@android:color/white"
-            android:textSize="@dimen/sp18" />
+            android:textSize="@dimen/sp14"
+            />
     </LinearLayout>
 
 </RelativeLayout>
